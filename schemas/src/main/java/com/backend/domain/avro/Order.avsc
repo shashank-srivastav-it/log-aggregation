@@ -1,0 +1,70 @@
+{
+  "name": "Order",
+  "namespace": "com.backend.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "customerName",
+      "type": "string"
+    },
+    {
+      "name": "customerEmail",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "doc": "Optional field for message from user"
+    },
+    {
+      "name": "store",
+      "type": "Store"
+    },
+    {
+      "name": "orderItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "OrderItem",
+          "name": "orderItem"
+        }
+      }
+    },
+    {
+      "name": "orderedTime",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "pickUp",
+      "type": {
+        "type": "enum",
+        "name": "PickUp",
+        "symbols": [
+          "STORE",
+          "HOME"
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "NEW"
+    },
+    {
+      "name": "recordType",
+      "type": "com.backend.domain.generated.RecordType",
+      "default": "CREATE_ORDER"
+    }
+  ]
+}

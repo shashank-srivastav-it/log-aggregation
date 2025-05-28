@@ -1,0 +1,220 @@
+2023-08-23 11:28:39 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-23 11:28:39 INFO  [main] c.b.o.OrderServiceApplication - Starting OrderServiceApplication using Java 11.0.18 on USGURSSRIVASKU7 with PID 35184 (C:\Users\ssrivastavakumar\Desktop\workspace\kafka\log-aggregation\order-service\target\classes started by ssrivastavakumar in C:\Users\ssrivastavakumar\Desktop\workspace\kafka\log-aggregation)
+2023-08-23 11:28:39 INFO  [main] c.b.o.OrderServiceApplication - The following 1 profile is active: "dev"
+2023-08-23 11:28:43 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-08-23 11:28:43 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-08-23 11:28:43 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-23 11:28:43 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-08-23 11:28:43 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-23 11:28:43 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3567 ms
+2023-08-23 11:28:44 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-08-23 11:28:44 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-08-23 11:28:44 INFO  [main] c.b.o.OrderServiceApplication - Started OrderServiceApplication in 6.281 seconds (JVM running for 7.231)
+2023-08-23 11:28:57 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-23 11:28:57 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-23 11:28:57 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-23 11:28:57 INFO  [http-nio-8082-exec-1] c.b.o.controller.OrderController - Received the request for an order : OrderDTO(id=null, customerName=Shashank, customerEmail=Shashank@test.com, message=, store=StoreDTO(storeId=123, address=AddressDTO(addressLine1=1234 street, city=New Delhi, state=Delhi, country=India, zip=110094)), orderItems=[OrderItemDTO(name=Tea, size=MEDIUM, quantity=1, cost=9.9)], pickUp=STORE, status=PROCESSING, orderedTime=null)
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = USER_INFO
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.RecordNameStrategy
+	schema.registry.url = [https://psrc-3w372.australia-southeast1.gcp.confluent.cloud]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+2023-08-23 11:28:58 WARN  [http-nio-8082-exec-1] o.a.k.c.producer.ProducerConfig - The configuration 'basic.subject.name.strategy' was supplied but isn't a known config.
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+2023-08-23 11:28:58 INFO  [http-nio-8082-exec-1] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1692770338862
+2023-08-23 11:29:06 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:06 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:06 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:06 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:06 ERROR [http-nio-8082-exec-1] o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='f41eba79-4d12-4cb7-a921-ea83502b31ce' and payload='{"id": f41eba79-4d12-4cb7-a921-ea83502b31ce, "customerName": "Shashank", "customerEmail": "Shashank@...' to topic order:
+org.apache.kafka.common.errors.SaslAuthenticationException: Authentication failed
+2023-08-23 11:29:06 ERROR [http-nio-8082-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.kafka.KafkaException: Send failed; nested exception is org.apache.kafka.common.errors.SaslAuthenticationException: Authentication failed] with root cause
+org.apache.kafka.common.errors.SaslAuthenticationException: Authentication failed
+2023-08-23 11:29:11 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:11 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:11 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:11 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:17 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:17 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:17 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:17 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:23 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:23 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:23 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:23 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:29 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:29 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:29 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:29 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:35 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:35 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:35 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:35 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:42 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:42 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:42 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:42 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:48 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:48 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:48 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:48 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:29:54 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:29:54 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:29:54 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:29:54 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:01 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:01 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:01 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:01 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:07 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:07 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:07 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:07 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:13 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:13 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:13 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:13 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:19 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:19 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:19 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:19 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:25 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:25 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:25 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:25 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:32 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:32 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:32 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:32 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:38 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:38 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:38 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:38 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:44 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:44 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:44 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:44 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:50 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:50 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:50 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:50 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:30:57 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:30:57 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:30:57 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:30:57 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:31:03 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:31:03 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:31:03 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:31:03 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:31:09 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:31:09 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:31:09 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:31:09 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:31:15 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:31:15 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:31:15 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:31:15 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected
+2023-08-23 11:31:21 INFO  [kafka-producer-network-thread | producer-1] o.a.kafka.common.network.Selector - [Producer clientId=producer-1] Failed authentication with pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57 (Authentication failed)
+2023-08-23 11:31:21 INFO  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-23 11:31:21 ERROR [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (pkc-xrnwx.asia-south2.gcp.confluent.cloud/34.131.75.57:9092) failed authentication due to: Authentication failed
+2023-08-23 11:31:21 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092 (id: -1 rack: null) disconnected

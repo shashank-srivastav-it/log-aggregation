@@ -1,0 +1,6 @@
+{
+  "type": "enum",
+  "name": "RecordType",
+  "namespace": "com.backend.domain.generated",
+  "symbols": ["CREATE_ORDER", "UPDATE_ORDER","DELETE_ORDER"]
+}

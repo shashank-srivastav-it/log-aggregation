@@ -1,0 +1,19 @@
+{
+  "name": "OrderDeleteEvent",
+  "namespace": "com.backend.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "recordType",
+      "type": "com.backend.domain.generated.RecordType",
+      "default": "DELETE_ORDER"
+    }
+  ]
+}

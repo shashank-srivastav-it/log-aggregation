@@ -1,0 +1,31 @@
+{
+  "name": "OrderUpdateEvent",
+  "namespace": "com.backend.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "OrderStatus",
+        "symbols": [
+          "PROCESSING",
+          "READY_FOR_PICK_UP",
+          "DELIVERED"
+        ]
+      }
+    },
+    {
+      "name": "recordType",
+      "type": "com.backend.domain.generated.RecordType",
+      "default": "UPDATE_ORDER"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "OrderId",
+  "namespace": "com.backend.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+spring:
+  kafka:
+    template:
+      default-topic: order
+    producer:
+      bootstrap-servers: pkc-xrnwx.asia-south2.gcp.confluent.cloud:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    properties:
+      schema.registry.url: https://psrc-3w372.australia-southeast1.gcp.confluent.cloud
+      value:
+        subject:
+          name:
+            strategy: io.confluent.kafka.serializers.subject.RecordNameStrategy
+      sasl.mechanism: PLAIN
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='QQMYNUXNZDGEXUOZ' password='9gi6uzOYLB3z9p8EAl/DXJBEB7CDgJdcQikIbdpkhQDEg3zLhLAdjQ5FyJkp9pRi';
+      security:
+        protocol: SASL_SSL
+      basic:
+        auth:
+          credentials:
+            source: USER_INFO
+          user:
+            info: KZZLH6AFGRN7FQ3C:ytMGKqbtn+S89a/VOpnbMfZkhWStJ0WVgYkZFsM9ABLQu3HyngKKzvw2XnDXh/xq
+        subject:
+          name:
+            strategy: io.confluent.kafka.serializers.subject.RecordNameStrategy
+
+
+# Logging configuration
+log:
+  app-name: order-service

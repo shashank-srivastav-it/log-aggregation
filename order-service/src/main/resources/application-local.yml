@@ -1,0 +1,18 @@
+spring:
+  kafka:
+    template:
+      default-topic: order
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    properties:
+      schema.registry.url: http://localhost:8081
+      value:
+        subject:
+          name:
+            strategy: io.confluent.kafka.serializers.subject.RecordNameStrategy
+
+# Logging configuration
+log:
+  app-name: order-service
